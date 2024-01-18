@@ -4,7 +4,7 @@ import Album from '../Album';
 import './styles.scss';
 
 AlbumList.propTypes = {
-
+    albumList: PropTypes.array.isRequired,
 };
 
 function AlbumList({ albumList }) {

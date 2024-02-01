@@ -33,7 +33,15 @@ function AlbumFeature(props) {
         }
     ]
     return (
-        <div>
+        /*<div className='left'>
+            <ul>
+                <li> khám phá </li>
+                <li> zing chart </li>
+                <li> radio </li>
+            </ul>
+        </div>*/
+
+        <div className='right'>
             <h2>Có thể bạn sẽ thích</h2>
             <AlbumList albumList={albumList} />
         </div>

@@ -7,7 +7,7 @@ const Header = () => {
                 <div className="row">
                     <div className="col-6">
                         <a href="#">
-                            <img src={logo}></img>
+                            <img src={logo} alt='OpenChat' className='logo' ></img>
                         </a>
                     </div>
                     <div className="col-6">Phai</div>

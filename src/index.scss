@@ -4,6 +4,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin:auto;
+ 
 }
 .row{
   display: flex;
@@ -11,6 +12,10 @@
 }
 
 .header-top {
-  background-color: red;
-
+  background-color: rgb(107, 104, 104);
+  height: 100px;
+}
+.col-6 {
+  flex:0 0 50%;
+  max-width: 50%;
 }

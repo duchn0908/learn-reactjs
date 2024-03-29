@@ -1,10 +1,12 @@
-import Header from "./Header/Header";
+import Body from "./Container/Body";
+
+import Header from "./Container/Header";
 
 const App = () => {
   return (
     <>
       <Header />
-      <h1>Body</h1>
+      <Body />
       <h1>Footer</h1>
     </>
   )

@@ -159,14 +159,63 @@
   }
   .detail{
     width:60%;
-    .btn-q1{
+    .btn-q{
       background: white;
       color: black;
       font-weight: 500;
       font-size: 24px;
       border: none;
       --bs-btn-active-bg: none;
+      text-align: left;
+      padding:20px 0px;
+   
     }
+    .answer {
+      font-size: 20px;
+    }
+    .each-question {
+      border-bottom: 1px solid grey;
+    }
+  }
+}
+.footer{
+  height: auto;
+  width: 100%;
+  background: #1a1c22;
+  margin-top: 70px;
+  .top-footer {
+    display: flex;
+    // height: 500px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .col-25{
+      width: 25%;
+      .logo-white{
+        height: 48px;
+        width: 200px;
+      }
+      .head-footer{
+        color: rgb(255 255 255);
+        padding: 10px;
+        list-style: none;
+        font-weight: bold;
+      }
+      .text-footer{    
+        padding: 10px;
+        list-style: none;        
+        font-weight: 400;
+        & > a{
+          text-decoration: none;
+          color: rgb(161 161 170);
+        }
+      }
+    }
+  }
+  .bottom-footer{
+    color: rgb(161 161 170);
+    border-top: solid 1px;
+    font-size: .875rem;
+   padding:20px 0;
   }
 }
 

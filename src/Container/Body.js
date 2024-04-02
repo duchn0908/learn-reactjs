@@ -1,13 +1,9 @@
-import icon1 from "../Img/banner-icon-ring.svg"
 import icon2 from "../Img/banner-icon-arrow.svg"
+import icon from '../Img/banner-icon-chat.webp'
+import icon1 from "../Img/banner-icon-ring.svg"
 import icon3 from '../Img/flashlight-line.svg'
 import mockup from '../Img/mockup-iphone.webp'
-import icon from '../Img/banner-icon-chat.webp'
-import Question_one from "./Question_one"
-import Question_two from "./Question_two"
-import Question_three from "./Question_three"
-import Question_four from "./Question_four"
-
+import QA from "./QA"
 
 const Body = () => {
     return (<>
@@ -62,13 +58,7 @@ const Body = () => {
                         <span>Frequently Asked Questions</span>
                     </div>
                     <div className="detail">
-                        <div className="each-question"> <Question_one /></div>
-                        <div className="each-question"> <Question_two /></div>
-                        <div className="each-question">    <Question_three /></div>
-                        <div className="each-question">    <Question_four /></div>
-
-
-
+                        <QA />
                     </div>
                 </div>
             </div>

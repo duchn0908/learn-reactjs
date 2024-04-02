@@ -1,10 +1,15 @@
+import React from "react";
+import { propTypes } from "react-bootstrap/esm/Image";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 
-function Question_two() {
+// DetailQuestion.propTypes = {
+//     detailQuestion: propTypes.object.isRequired,
+// };
+// console.log('detailquestion', detailQuestion);
+function DetailQuestion({ data }) {
     const [open, setOpen] = useState(false);
-
     return (
         <>
             <Button
@@ -13,15 +18,16 @@ function Question_two() {
                 aria-expanded={open}
                 className='btn-q'
             >
-                Is the OpenChat encrypted and secure?
+                <p>{data.question}</p>
             </Button>
             <Collapse in={open}>
                 <div id="example-collapse-text" className='answer'>
-                    Yes, we take data security seriously. Our product chat uses encryption protocols to protect messages and user information, ensuring a secure communication environment.
+                    <p>{data.answer}</p>
                 </div>
             </Collapse>
-        </>
-    );
-}
 
-export default Question_two;
+        </>
+
+    )
+}
+export default DetailQuestion;
